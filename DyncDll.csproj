@@ -52,7 +52,11 @@ copy $(TargetDir)$(TargetName).pdb $(ProjectDir)Data</PostBuildEvent>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hot\**\*.cs" />
+    <Compile Include="Hot\Extension.cs" />
+    <Compile Include="Hot\hotApp.cs" />
+    <Compile Include="Hot\HotHelloWorld.cs" />
+    <Compile Include="Hot\HotT.cs" />
+    <Compile Include="Hot\HotTemplate.cs" />
     <Compile Include="Assets\hotScripts\**\*.cs" />
   </ItemGroup>
 </Project>

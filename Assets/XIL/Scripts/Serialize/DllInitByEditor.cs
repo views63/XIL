@@ -47,7 +47,7 @@ namespace wxb
                 return;
 
             appdomain_ = new AppDomain();
-            appdomain.RegisterCrossBindingAdaptor(new CoroutineAdapter());
+            appdomain.RegisterCrossBindingAdaptor(new CoroutineAdapter());            
             System.Type clrType = System.Type.GetType("ILRuntime.Runtime.Generated.CLRBindings");
             if (clrType != null)
                 clrType.GetMethod("Initialize").Invoke(null, new object[] { appdomain });

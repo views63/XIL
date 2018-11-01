@@ -325,6 +325,7 @@ namespace wxb
         static public void InitHotModule()
         {
             appdomain = new AppDomain();
+            appdomain.DebugService.StartDebugService(56000);
             appdomain.RegisterCrossBindingAdaptor(new CoroutineAdapter());
 
 #if UNITY_EDITOR
